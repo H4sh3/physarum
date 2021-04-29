@@ -47,7 +47,7 @@ function drawField(field) {
     const factor = (255 / state.fieldWrapper.max)
     field.forEach((row, x) => {
         row.forEach((cell, y) => {
-            context.fillStyle = `rgb(0,${factor * cell},0)`;
+            context.fillStyle = `rgb(0,0,${factor * cell})`;
             context.fillRect(x * bs, y * bs, bs, bs);
         })
     })
